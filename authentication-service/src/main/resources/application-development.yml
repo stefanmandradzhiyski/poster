@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/poster_user
+    username: poster
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: basicBroker
+
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+
+jwt.header: Authorization
+jwt.secret: n2r5u8x/A%D*G-KaPdSgVkYp3s6v9y$B&E(H+MbQeThWmZq4t7w!z%C*F-J@NcRf
+jwt.expiration: 25200000
