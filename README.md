@@ -2,13 +2,13 @@
 
 Poster is a simple and user-friendly application built using a microservices architecture in order to achieve better durability and independence between functionalities. It allows its users to create their own profile, share a post, leave a comment under a post, and like it. There are two different searches - post and user searches. Every registered user has got the ability to manage his own profile and check his last-day activity. The main entry point of the system is the member gateway on port 8080.
 
-Framework:
+**Framework**:
 Spring Boot
 
-Programming language:
+**Programming language**:
 Java 17
 
-Additional libraries and tools:
+**Additional libraries and tools:**
 Gradle, Docker, Kafka, PostgreSQL, JWT, Jackson, Swagger, Hibernate, Flyway, Lombok, Mapstruct
 
 FUll list of APIs and functionalities:
@@ -36,15 +36,15 @@ FUll list of APIs and functionalities:
 - **GET api/v1/history/{username}** - load specific type of history.
 
 What steps you need to follow if you want to run the application:
-- Download and install Java 17 SDK or higher on your personal computer;
-- Download and install an IDE - IntellijIDEA, Eclipse etc;
-- Download and install Docker;
-- Import the project using Gradle;
-- Open the terminal and go to the directory where you saved the application and execute this command: docker-compose up -d
-- The docker container will run a zookeper on port 2181, a kafka broker on port 9092 and a postgres server with predefined databases on port 5432;
+- Download and install **Java 17 SDK or higher** on your personal computer;
+- Download and install an IDE - **IntellijIDEA, Eclipse etc**;
+- Download and install **Docker**;
+- Import the project using **Gradle**;
+- Open the terminal and go to the directory where you saved the application and execute this command: **docker-compose up -d**
+- The docker container will run a zookeper on port **2181**, a kafka broker on port **9092** and a postgres server with predefined databases on port **5432**;
 - Lastly, run all the microservices: 
-  - member-gateway on port 8080;
-  - authenticaion-service on port 8081;
-  - history-service on port 8082;
-  - post-service on port 8083;
-  - user-service on port 8084.
+  - member-gateway on port **8080**;
+  - authenticaion-service on port **8081**;
+  - history-service on port **8082**;
+  - post-service on port **8083**;
+  - user-service on port **8084**.
