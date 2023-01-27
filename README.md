@@ -9,17 +9,7 @@ Programming language:
 Java 17
 
 Additional libraries and tools:
-- Gradle;
-- Docker;
-- Kafka;
-- PostgreSQL;
-- JWT;
-- Jackson;
-- Swagger;
-- Hibernate;
-- Flyway;
-- Lombok;
-- Mapstruct.
+Gradle, Docker, Kafka, PostgreSQL, JWT, Jackson, Swagger, Hibernate, Flyway, Lombok, Mapstruct
 
 FUll list of APIs and functionalities:
 - **POST api/v1/users** - register a new user;
@@ -52,4 +42,9 @@ What steps you need to follow if you want to run the application:
 - Import the project using Gradle;
 - Open the terminal and go to the directory where you saved the application and execute this command: docker-compose up -d
 - The docker container will run a zookeper on port 2181, a kafka broker on port 9092 and a postgres server with predefined databases on port 5432;
-- Lastly, run all the microservices: authenticaion, history, post, user, member-gateway
+- Lastly, run all the microservices: 
+  - member-gateway on port 8080;
+  - authenticaion-service on port 8081;
+  - history-service on port 8082;
+  - post-service on port 8083;
+  - user-service on port 8084.
