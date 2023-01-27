@@ -35,6 +35,9 @@ FUll list of APIs and functionalities:
 - **DELETE api/v1/comments/{commentId}** - delete your own comment, decrease the post comment count and save this action to the history;
 - **GET api/v1/history/{username}** - load specific type of history.
 
+**Swagger URL**:
+http://localhost:8080/swagger-ui/index.html#
+
 What steps you need to follow if you want to run the application:
 - Download and install **Java 17 SDK or higher** on your personal computer;
 - Download and install an IDE - **IntellijIDEA, Eclipse etc**;
